@@ -3,10 +3,10 @@ import React from 'react';
 const Details = ({ status, premiered, network }) => {
   return (
     <div>
-      <p>
+      <p style={{ fontWeight: 'normal', fontSize: 25 }}>
         Status: <span>{status}</span>
       </p>
-      <p>
+      <p style={{ fontWeight: 'normal', fontSize: 25 }}>
         Premiered {premiered} {network ? `on ${network.name}` : null}
       </p>
     </div>
