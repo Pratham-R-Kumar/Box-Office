@@ -13,7 +13,7 @@ const Cast = ({ cast }) => {
             />
           </div>
           <div>
-            <span style={{ fontWeight: 'normal', fontSize: 25 }}>
+            <span>
               {person.name} | {character.name} {voice ? '| Voice' : ''}
             </span>
           </div>
