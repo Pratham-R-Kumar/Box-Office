@@ -1,13 +1,14 @@
 import React from 'react';
+import { TitleWrapper } from './Title.styles';
 
 const Title = ({ title, subtitle }) => {
   return (
-    <div>
+    <TitleWrapper>
       <h1>
         {title}
         <p>{subtitle}</p>
       </h1>
-    </div>
+    </TitleWrapper>
   );
 };
 
