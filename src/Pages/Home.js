@@ -3,9 +3,10 @@ import ActorGrid from '../components/actor/ActorGrid';
 import MainPage from '../components/MainPage';
 import ShowGrid from '../components/show/ShowGrid';
 import { apiGet } from '../misc/config';
+import { useLastQuery } from '../misc/custom-hooks';
 
 const Home = () => {
-  const [input, inputState] = useState('');
+  const [input, inputState] = useLastQuery();
   const [results, setResult] = useState(null);
   const [showOptions, setShowOptions] = useState('shows');
   const isShowsShown = showOptions === 'shows';
